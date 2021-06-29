@@ -1,7 +1,11 @@
 header {
-    width:95%;
+    width: 95%;
     margin: 0 auto;
-    // overflow-x:visible; 
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 nav {
