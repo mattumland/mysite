@@ -6,19 +6,19 @@ const header = () => {
         <header>
             <nav>
                 <li>
-                    <button>MATT UMLAND</button>
+                    <button className='nav-button'>MATT UMLAND</button>
                 </li>
                 <li>
-                    <button>CODES</button>
+                    <button className='nav-button'>CODE</button>
                 </li>
                 <li>
-                    <button>EXHIBITS</button>
+                    <button className='nav-button'>EXHIBITS</button>
                 </li>
                 <li>
-                    <button>GAMES</button>
+                    <button className='nav-button'>GAMES</button>
                 </li>
                 <li>
-                    <button>MUSIC</button>
+                    <button className='nav-button'>MUSIC</button>
                 </li>
             </nav>
         </header>
