@@ -6,19 +6,19 @@ const header = () => {
         <header>
             <nav>
                 <li>
-                    <button className='nav-button'>MATT UMLAND</button>
+                    <button className='home-button'>MATT UMLAND</button>
                 </li>
                 <li>
-                    <button className='nav-button'>CODE</button>
+                    <button className='code-button'>CODE</button>
                 </li>
                 <li>
-                    <button className='nav-button'>EXHIBITS</button>
+                    <button className='exhibits-button'>EXHIBITS</button>
                 </li>
                 <li>
-                    <button className='nav-button'>GAMES</button>
+                    <button className='games-button'>GAMES</button>
                 </li>
                 <li>
-                    <button className='nav-button'>MUSIC</button>
+                    <button className='music-button'>MUSIC</button>
                 </li>
             </nav>
         </header>

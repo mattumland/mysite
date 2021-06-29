@@ -1,3 +1,5 @@
+@import "../index.scss";
+
 header {
     width: 95%;
     margin: 0 auto;
@@ -19,8 +21,28 @@ nav {
 li {
     width: 100%;
 
-    .nav-button {
-        width:80px;
-        height: 40px;
+    .home-button {
+        @include nav-button;
+        background-color: black;
+        color: $color1;
+    }
+
+    .code-button {
+        @include nav-button;
+        // background-color: $color1;
+    }
+
+    .exhibits-button {
+        @include nav-button;
+        background-color: $color2;
+    }
+    .games-button {
+        @include nav-button;
+        background-color: $color3;
+        color: $color1;
+    }
+    .music-button {
+        @include nav-button;
+        background-color: $color5;
     }
 }
