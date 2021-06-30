@@ -2,12 +2,6 @@ import './Header.scss';
 
 const header = ( { page, updatePage} ) => {
 
-/*
-add active class style
-add ternary based on page to determine if button is active
-add onClick for each button that changes page in App
-*/
-
     return (
         <header>
             <nav>
