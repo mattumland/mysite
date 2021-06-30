@@ -1,0 +1,55 @@
+@import "../index.scss";
+
+header {
+    width: 95%;
+    margin: 0 auto;
+    position: fixed;
+    top: 20px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+li {
+    width: 100%;
+
+    .home-button {
+        @include nav-button;
+        background-color: black;
+        color: $color2;
+    }
+
+    .code-button {
+        @include nav-button;
+        // background-color: $color1;
+    }
+
+    .other-button {
+        @include nav-button;
+        background-color: $color2;
+    }
+    .games-button {
+        @include nav-button;
+        background-color: $color3;
+        color: $color1;
+    }
+    .music-button {
+        @include nav-button;
+        background-color: $color5;
+    }
+
+    .active-button {
+        @include nav-button;
+        border: solid 4px black;
+        background-color: whitesmoke;
+
+    }
+}
