@@ -1,24 +1,45 @@
-
 import './Header.scss';
 
-const header = () => {
+const header = ( { page, updatePage} ) => {
+
+/*
+add active class style
+add ternary based on page to determine if button is active
+add onClick for each button that changes page in App
+*/
+
     return (
         <header>
             <nav>
                 <li>
-                    <button className='home-button'>MATT UMLAND</button>
+                    <button id='home' 
+                    className={page === 'home' ? 'active-button' :'home-button'}
+                    onClick={e => updatePage('home')}
+                    >MATT UMLAND</button>
                 </li>
                 <li>
-                    <button className='code-button'>CODE</button>
+                    <button id='code' 
+                    className={page === 'code' ? 'active-button' :'code-button'}
+                    onClick={e => updatePage('code')}
+                    >CODE</button>
                 </li>
                 <li>
-                    <button className='exhibits-button'>EXHIBITS</button>
+                    <button id='exhibits' 
+                    className={page === 'exhibits' ? 'active-button' : 'exhibits-button'}
+                    onClick={e => updatePage('exhibits')}
+                    >EXHIBITS</button>
                 </li>
                 <li>
-                    <button className='games-button'>GAMES</button>
+                    <button id='games' 
+                    className={page === 'games' ? 'active-button' : 'games-button'}
+                    onClick={e => updatePage('games')}
+                    >GAMES</button>
                 </li>
                 <li>
-                    <button className='music-button'>MUSIC</button>
+                    <button id='music' 
+                    className={page === 'music' ? 'active-button' : 'music-button'}
+                    onClick={e => updatePage('music')}
+                    >MUSIC</button>
                 </li>
             </nav>
         </header>
