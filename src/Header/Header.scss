@@ -24,7 +24,7 @@ li {
     .home-button {
         @include nav-button;
         background-color: black;
-        color: $color1;
+        color: $color2;
     }
 
     .code-button {
@@ -32,7 +32,7 @@ li {
         // background-color: $color1;
     }
 
-    .exhibits-button {
+    .other-button {
         @include nav-button;
         background-color: $color2;
     }
@@ -48,8 +48,8 @@ li {
 
     .active-button {
         @include nav-button;
-        border: solid 2px black;
-        background-color: pink;
-        
+        border: solid 4px black;
+        background-color: whitesmoke;
+
     }
 }
