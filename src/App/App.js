@@ -11,12 +11,12 @@ const App = () => {
   }
 
   return (
-    <div className="app-background">
+    <section className="app-background">
       <Header 
         page={page}
         updatePage={updatePage}
       />
-    </div>
+    </section>
   );
 }
 
