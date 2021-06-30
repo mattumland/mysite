@@ -45,4 +45,11 @@ li {
         @include nav-button;
         background-color: $color5;
     }
+
+    .active-button {
+        @include nav-button;
+        border: solid 2px black;
+        background-color: pink;
+        
+    }
 }
