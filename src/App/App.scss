@@ -1,3 +1,5 @@
+@import "../index.scss";
+
 .app-background {
   height:100vh;
   background-image: url("../images/background.jpg");
@@ -31,3 +33,19 @@
   80% { transform:translate(3%, 35%) }
   90% { transform:translate(-10%, 10%) }
 }
+
+.home-view {
+  @include standard-margin;
+  display: flex;
+  margin-top: 80px;
+}
+
+.portrait-container {
+  width: 50%;
+}
+
+.portrait-img {
+  width: 10%;
+  object-fit: cover;
+}
+
