@@ -1,8 +1,7 @@
 @import "../index.scss";
 
 header {
-    width: 95%;
-    margin: 0 auto;
+    @include standard-margin;
     position: fixed;
     top: 20px;
     left: 0;
