@@ -19,6 +19,7 @@
   position: fixed;
   top: -100%;
   width: 300%;
+  z-index: 0;
 }
 
 @keyframes grain {
@@ -44,6 +45,8 @@
 .portrait-container {
   width: 100%;
   background-color: #ffffff99;
+  z-index: 2;
+
 }
 
 .portrait-img {
@@ -59,23 +62,27 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items:center;
+  margin: 10px 0 0 0;
 }
 
 .icon-links {
-  width: 200px;
-  height: 10px;
+  width: 110px;
+  height: 30px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.logo-container {
-  height: 15px;
-  object-fit: contain;
+.logo-link {
+  height: 30px;
+  width: 30px;
+  z-index: 4;
 }
 
 .logo {
-  width:100%;
+  object-fit: fill;
+  height:30px;
 }
 
 

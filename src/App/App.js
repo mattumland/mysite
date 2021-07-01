@@ -8,9 +8,6 @@ import itchlogo from '../images/itchlogo.png';
 import camplogo from '../images/camplogo.png';
 import twitlogo from '../images/twitlogo.png';
 
-
-
-
 const App = () => {
 
   const [page, setPage] = useState('home')
@@ -31,19 +28,21 @@ const App = () => {
         </div>
         <section className="bio-container">
           <div className="bio-header">
-            <h1 className='name'>MATT UMLAND</h1>
-            <ul className='icon-links'>
-              <li>
-                <a className="logo-container" href="https://github.com/mattumland" target="_blank" rel="noopener noreferrer">
+            <h1 className="name">MATT UMLAND</h1>
+            <div className="icon-links">
+                <a className="logo-link" href="https://github.com/mattumland" target="_blank" rel="noopener noreferrer">
                   <img className="logo" src={gitlogo} alt="the Github logo"/>
                 </a>
-              </li>
-              <li>
-                <a className="logo-container" href="https://github.com/mattumland" target="_blank" rel="noopener noreferrer">
+                <a className="logo-link" href="https://twitter.com/MattUmland3" target="_blank" rel="noopener noreferrer">
                   <img className="logo" src={twitlogo} alt="the Twitter logo"/>
                 </a>
-              </li>
-            </ul>
+                  <a className="logo-link" href="https://www.instagram.com/matt.umland/" target="_blank" rel="noopener noreferrer">
+                  <img className="logo" src={gramlogo} alt="the Instagram logo"/>
+                </a>
+            </div>
+            <p>
+
+            </p>
           </div>
         </section>
       </article>
