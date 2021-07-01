@@ -34,8 +34,13 @@ const App = () => {
             <h1 className='name'>MATT UMLAND</h1>
             <ul className='icon-links'>
               <li>
-                <a href="https://github.com/mattumland" target="_blank" rel="noopener noreferrer">
-                  <img src={gitlogo} alt="the Github logo"/>
+                <a className="logo-container" href="https://github.com/mattumland" target="_blank" rel="noopener noreferrer">
+                  <img className="logo" src={gitlogo} alt="the Github logo"/>
+                </a>
+              </li>
+              <li>
+                <a className="logo-container" href="https://github.com/mattumland" target="_blank" rel="noopener noreferrer">
+                  <img className="logo" src={twitlogo} alt="the Twitter logo"/>
                 </a>
               </li>
             </ul>

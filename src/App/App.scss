@@ -56,7 +56,27 @@
 }
 
 .bio-header {
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+.icon-links {
+  width: 200px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo-container {
+  height: 15px;
+  object-fit: contain;
+}
+
+.logo {
+  width:100%;
+}
+
+
 
