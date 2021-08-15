@@ -1,3 +1,5 @@
+@import "../index.scss";
+
 .app-background {
   height:100vh;
   background-image: url("../images/background.jpg");
@@ -13,10 +15,11 @@
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.22;
+  opacity: 0.12;
   position: fixed;
   top: -100%;
   width: 300%;
+  z-index: 0;
 }
 
 @keyframes grain {
@@ -31,3 +34,69 @@
   80% { transform:translate(3%, 35%) }
   90% { transform:translate(-10%, 10%) }
 }
+
+.home-view {
+  @include standard-margin;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.portrait-container {
+  width: 100%;
+  background-color: #ffffff99;
+  z-index: 2;
+
+}
+
+.empty-field {
+  height: 400px;
+  width: 300px;
+}
+
+.portrait-img {
+  width: 100%;
+}
+
+.bio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.bio-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid black;
+  margin: 10px 0 0 0;
+  z-index: 3;
+  
+}
+
+.icon-links {
+  width: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 0 5px 0;
+}
+
+.logo-link {
+  height: 30px;
+  width: 30px;
+  z-index: 4;
+}
+
+.logo {
+  object-fit: fill;
+  height: 30px;
+}
+
+.bio {
+  margin: 6px 0 0 0;
+  list-style-type: disc;
+}
+
+
+

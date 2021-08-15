@@ -1,20 +1,20 @@
 @import "../index.scss";
 
+
 header {
-    width: 95%;
-    margin: 0 auto;
+    @include standard-margin;
     position: fixed;
     top: 20px;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
 }
 
 nav {
     width: 100%;
     display: flex;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
 }
 
@@ -26,16 +26,24 @@ li {
         background-color: black;
         color: $color2;
     }
+    
+    .other-button {
+        @include nav-button;
+        background-color: $color2;
+    }
+
+    .active-button {
+        @include nav-button;
+        border: solid 1px whitesmoke;
+        border-bottom: solid 2px black;
+        background-color: whitesmoke;
+    }
 
     .code-button {
         @include nav-button;
         // background-color: $color1;
     }
 
-    .other-button {
-        @include nav-button;
-        background-color: $color2;
-    }
     .games-button {
         @include nav-button;
         background-color: $color3;
@@ -46,10 +54,4 @@ li {
         background-color: $color5;
     }
 
-    .active-button {
-        @include nav-button;
-        border: solid 4px black;
-        background-color: whitesmoke;
-
-    }
 }

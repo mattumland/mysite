@@ -18,12 +18,6 @@ const header = ( { page, updatePage} ) => {
                     >CODE</button>
                 </li>
                 <li>
-                    <button id='exhibits' 
-                    className={page === 'exhibits' ? 'active-button' : 'other-button'}
-                    onClick={e => updatePage('exhibits')}
-                    >EXHIBITS</button>
-                </li>
-                <li>
                     <button id='games' 
                     className={page === 'games' ? 'active-button' : 'other-button'}
                     onClick={e => updatePage('games')}
@@ -34,6 +28,12 @@ const header = ( { page, updatePage} ) => {
                     className={page === 'music' ? 'active-button' : 'other-button'}
                     onClick={e => updatePage('music')}
                     >MUSIC</button>
+                </li>
+                <li>
+                    <button id='exhibits' 
+                    className={page === 'exhibits' ? 'active-button' : 'other-button'}
+                    onClick={e => updatePage('exhibits')}
+                    >EXHIBITS</button>
                 </li>
             </nav>
         </header>

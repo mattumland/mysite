@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 *,
 *::after,
 *::before {
@@ -17,3 +21,25 @@ button {
     border: 0;
     border-radius: 0;
 }
+
+h1 {
+  font-family: 'Bebas Neue', cursive;
+  // font-family: 'Gruppo', cursive;
+  font-size: 28px;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 19px;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+
