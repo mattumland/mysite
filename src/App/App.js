@@ -25,6 +25,7 @@ const App = () => {
       <article className="home-view">
         <div className="portrait-container">
           <img className="portrait-img" src={portrait} alt="portrait of matt umland"/>
+          {/* <div className="empty-field"></div> */}
         </div>
         <section className="bio-container">
           <div className="bio-header">
@@ -40,14 +41,12 @@ const App = () => {
                   <img className="logo" src={gramlogo} alt="the Instagram logo"/>
                 </a>
             </div>
-            <p>
-
-            </p>
           </div>
+          <article className="bio">
+            <h2>Multi-discipline creator specializing in interactive experiences. Full-time full-stack developer. Electro-soul crooner. Designer of games. Rock band member. Museum maker. Exhibit producer.</h2>
+          </article>
         </section>
       </article>
- 
-
     </section>
   );
 }

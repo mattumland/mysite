@@ -15,7 +15,7 @@
   content: "";
   height: 300%;
   left: -50%;
-  opacity: 0.22;
+  opacity: 0.12;
   position: fixed;
   top: -100%;
   width: 300%;
@@ -49,6 +49,11 @@
 
 }
 
+.empty-field {
+  height: 400px;
+  width: 300px;
+}
+
 .portrait-img {
   width: 100%;
 }
@@ -62,16 +67,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items:center;
+  align-items: flex-end;
+  border-bottom: 2px solid black;
   margin: 10px 0 0 0;
+  z-index: 3;
+  
 }
 
 .icon-links {
-  width: 110px;
-  height: 30px;
+  width: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0 0 5px 0;
 }
 
 .logo-link {
@@ -82,7 +90,12 @@
 
 .logo {
   object-fit: fill;
-  height:30px;
+  height: 30px;
+}
+
+.bio {
+  margin: 6px 0 0 0;
+  list-style-type: disc;
 }
 
 
